@@ -29,10 +29,10 @@
 #       print(key,":",value)
 
 
-with open("story.txt", "r") as file:
-    text = file.read()
+with open("story.txt","r") as file:
+    txt = file.read()
 
-words = text.split()
+words = txt.split()
 
 word_count = {}
 
@@ -43,4 +43,4 @@ for word in words:
         word_count[word] = 1
 
 for word, count in word_count.items():
-    print(word, ":", count)
+    print(word,":",count)
