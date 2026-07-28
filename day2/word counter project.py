@@ -29,7 +29,7 @@
 #       print(key,":",value)
 
 
-with open("story.txt","r") as file:
+with open("day2/story.txt","r") as file:
     txt = file.read()
 
 words = txt.split()
