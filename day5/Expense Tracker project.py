@@ -1,35 +1,35 @@
-# file = open("message.txt", "w")
+# file = open("day5/message.txt", "w")
 # file.write("Hello, Python!")
 # file.close()
 
 
-# file = open("message.txt", "r")
+# file = open("day5/message.txt", "r")
 # print(file.read())
 # file.close()
 
 
-# with open("message.txt", "r") as file:
+# with open("day5/message.txt", "r") as file:
 #     content = file.read()
 #     print(content)
 
 
-# with open("notes.txt", "w") as file:
+# with open("day5/notes.txt", "w") as file:
 #     file.write("python\nmachine learning\nAI ")
 # print("data written succesfully!")
 
-# with open("notes.txt", "r") as file:
+# with open("day5/notes.txt", "r") as file:
 #     content = file.read()
 #     print(content)
 
 
 
-# with open("languages.txt", "w") as file:
+# with open("day5/languages.txt", "w") as file:
 #     file.write("python")
 #     file.write("\nC++")
 #     file.write("\njava")
 #     file.write("\njavascript")
 
-# with open("languages.txt", "r") as file:
+# with open("day5/languages.txt", "r") as file:
 #     content = file.read()
 #     print(content)
 
@@ -58,8 +58,9 @@ while True:
     print("1. Add expense")
     print("2. view expense")
     print("3. Exit")
-
+    
     choice = (input("Enter your choice:"))
+    
 
     if choice == "3":
         print("Thank you for using expense tracker!")
@@ -91,4 +92,7 @@ while True:
                     print(f"\nTotal Expenses: ${total}")
         except FileNotFoundError:
             print("No Expenses Found Yet!")
+
+    else:
+        print("Invalid choice! please enter a number from 1,2 or 3.")        
     
