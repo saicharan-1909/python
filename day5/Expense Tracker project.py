@@ -89,7 +89,7 @@ while True:
                     category, amount = line.strip().split("-")
                     amount = float(amount)
                     total += amount
-                    print(f"\nTotal Expenses: ${total}")
+                print(f"\nTotal Expenses: ${total}")
         except FileNotFoundError:
             print("No Expenses Found Yet!")
 
