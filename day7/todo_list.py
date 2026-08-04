@@ -11,7 +11,7 @@ while True:
         print("Thank You For Using To-Do List!")
         break
 
-    if choice == "1":
+    elif choice == "1":
         task = input("Enter your task:")
         with open("day7/tasks.txt", "a") as file:
             file.write(task + "\n")
@@ -51,6 +51,9 @@ while True:
                print("Task deleted successfully!")
             else:
                 print("Invalid task number!")
+
+        except FileNotFoundError:
+            print("no tasks found!")        
 
         except ValueError:
             print("Please enter valid number!")      
